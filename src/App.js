@@ -23,6 +23,7 @@ function App() {
           <Onemovie path="/movie/:_id" />
           <MoviesList path="/movielist"/>
           <Update path="/movie/update/:_id" />
+          <Onemovie path="/shows/:_id"/>
         </Router>
       </div>
     </div>

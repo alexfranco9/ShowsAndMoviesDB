@@ -14,7 +14,7 @@ const MovieAPICard = ({ shows, loading }) => {
                         <h3 className="card-title">{show.name}</h3>
                         <h6>Show Rating: {show.rating.average}</h6>
                         <p className="card-text">Premiered on: {show.premiered}</p>
-                        <a href="#" className="btn btn-primary">See full show summary.</a>
+                        <a href={`/shows/${show.id}`} className="btn btn-primary">See full show summary.</a>
                     </div>
             </div>
         ))}
