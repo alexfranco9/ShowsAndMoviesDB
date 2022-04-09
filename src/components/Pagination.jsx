@@ -9,10 +9,11 @@ export const Pagination = ({ showsPerPage, totalShows, paginate}) => {
 
     return (
         <div className="container mt-2 mb-5">
-            <ul className="pagination">
+            <ul className="pagination pagination-md justify-content-center">
                 {pageNumbers.map(number => (
                     <li key={number} className="page-item">
-                        <a onClick={() => paginate(number)} className="page-link">{number}</a>
+                        <a onClick={() => paginate(number)} className="page-link">{number}
+                        </a>
                     </li>
                 ))}
             </ul>

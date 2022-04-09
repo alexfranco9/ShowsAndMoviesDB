@@ -13,10 +13,9 @@ function App() {
     
 
   return (
-    <div>
-      <h1 className="text-center mb-3 mt-3">Welcome to Shows and Movies DB!</h1>
-      <div><Navbar/></div>
-      <div className="App">
+    <>
+      <Navbar/>
+      <div>
         <Router>
           <Home path="/" />
           <Addmovie path="/add" />
@@ -26,7 +25,7 @@ function App() {
           <Onemovie path="/shows/:_id"/>
         </Router>
       </div>
-    </div>
+    </>
   );
 }
 
