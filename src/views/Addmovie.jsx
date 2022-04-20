@@ -28,8 +28,8 @@ const Addmovie = props => {
                     setErros(res.data.err.errors);
                 } else {
                     console.log("Succes movie created!")
-                    // After movie is succesfully added navigate to home page.
-                    navigate("/");
+                    // After movie is succesfully added navigate to movies list page.
+                    navigate("/movieslist");
                 }
             })
             .catch(err => console.log("Something went wrong posting", err))

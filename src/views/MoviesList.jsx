@@ -12,13 +12,14 @@ const MoviesList = props => {
             .catch(err => console.log(err))
     }, [reloadAPI])
 
+
     const update = () => {
         setReloadApi(!reloadAPI);
     }
 
 
     return(
-            <div className="container mt-5">
+            <div>
                 {
                     allMovies ? 
                     allMovies.map((movie, i) => {

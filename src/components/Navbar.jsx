@@ -4,7 +4,7 @@ import { Link } from '@reach/router';
 
 const Navbar = () => {
     return(
-        <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+        <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
             <div className="container">
                 <a href="#" className="navbar-brand">Shows and Movies DB!</a>
 

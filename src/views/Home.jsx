@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import ShowAPICard from '../components/ShowAPICard';
 import Pagination from '../components/Pagination';
-import SectionOne from '../components/SectionOne';
+
 
 
 const Home = () => {
     const [shows, setShows] = useState([]);
     const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
-    const [showsPerPage] = useState(10);
+    const [showsPerPage] = useState(25);
 
     useEffect(() => {
         const fetchShows = async () => {
@@ -31,7 +31,7 @@ const Home = () => {
 
     return (
         <div>
-            <SectionOne/>
+            
             <div className="App">
             <ShowAPICard shows={currentShows} loading={loading}/>
             <Pagination showsPerPage={showsPerPage} totalShows={shows.length} paginate={paginate}/>

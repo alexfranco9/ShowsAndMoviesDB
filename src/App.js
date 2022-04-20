@@ -8,6 +8,9 @@ import Addmovie from './views/Addmovie';
 import Onemovie from './views/Onemovie';
 import Update from './views/Updatemovie';
 import MoviesList from './views/MoviesList';
+import Footer from './components/Footer';
+import SectionOne from './components/SectionOne';
+import OneShow from './views/OneShow';
 
 function App() {
     
@@ -15,16 +18,21 @@ function App() {
   return (
     <>
       <Navbar/>
+      <SectionOne/>
       <div>
-        <Router>
+
+        <Router className="App">
           <Home path="/" />
-          <Addmovie path="/add" />
+          <Addmovie path="/add"/>
           <Onemovie path="/movie/:_id" />
-          <MoviesList path="/movielist"/>
+          <MoviesList path="/movieslist"/>
           <Update path="/movie/update/:_id" />
           <Onemovie path="/shows/:_id"/>
+          {/* <OneShow path="https://api.tvmaze.com/shows/:_id"/> */}
         </Router>
+        
       </div>
+      <Footer/>
     </>
   );
 }

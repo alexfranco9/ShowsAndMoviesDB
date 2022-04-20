@@ -18,11 +18,10 @@ const Onemovie = props => {
 
     return(
         <div>
-            <h1>This is the One Movie page!</h1>
             {
                 oneMovie ? 
                 
-                <div className="card container" style={{width: "30rem"}}>
+                <div className="card container" style={{width: "35rem"}}>
                     <br/>
                         <div>
                             <img className="card-img-top" src={oneMovie.poster} alt={oneMovie.title}/>
