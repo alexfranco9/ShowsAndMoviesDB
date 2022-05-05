@@ -18,17 +18,17 @@ const SectionOne = () => {
                         <button 
                         className="btn btn-primary btn-lg mb-2" onClick={() => {
                         setOpenModal(true); }}
-                        >Modal here to: Join our news letter!</button>
+                        >Join our news letter!</button>
                         {openModal && <ModalJoinNewsLetter closeModal={setOpenModal}/>}
                         
                     </div>
                     <img 
-                        className="img-fluid d-none d-sm-block m-1" 
+                        className="img-fluid d-none d-md-block m-1" 
                         style={{width: "350px"}}
                         src="/img/pexels-chi-2.jpg" 
                         alt=""/>
                     <img 
-                        className="img-fluid d-none d-sm-block m-1" 
+                        className="img-fluid d-none d-md-block m-1" 
                         style={{width: "350px"}}
                         src="/img/pexel-chi-theater.jpg" 
                         alt="image of Chicago Theater"/>

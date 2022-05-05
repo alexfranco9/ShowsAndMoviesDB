@@ -4,7 +4,7 @@ const ModalJoinNewsLetter = ({closeModal}) => {
     return (
         <div>       
             <div>
-                        <p className="lead">Please fill out this form and than check your email!</p>
+                        <p className="lead">Please fill out this form and then check your email!</p>
                     </div>
                         <button onClick={() => closeModal(false)}> X </button>
                             <div className="react-modal-fade" tabIndex="-1">
@@ -26,10 +26,6 @@ const ModalJoinNewsLetter = ({closeModal}) => {
                                 <div className="mb-3">
                                     <label htmlfor="email" className="col-form-label">Email:</label>
                                     <input type="email" className="form-control" id="email" />
-                                </div>
-                                <div className="mb-3">
-                                    <label htmlfor="phone" className="col-form-label">Phone:</label>
-                                    <input type="tel" className="form-control" id="phone" />
                                 </div>
                                 </form>
                                 </div>
