@@ -31,7 +31,6 @@ const Home = () => {
 
     return (
         <div>
-            
             <div className="App">
             <ShowAPICard shows={currentShows} loading={loading}/>
             <Pagination showsPerPage={showsPerPage} totalShows={shows.length} paginate={paginate}/>
