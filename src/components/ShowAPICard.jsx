@@ -12,7 +12,7 @@ const ShowAPICard = ({ shows, loading }) => {
                 <img className="card-img-top" src={show.image.medium} alt={show.name}/>
                     <div className="card-body">
                         <h5 className="card-title">{show.name}</h5>
-                        <p>Show Rating: {show.rating.average}</p>
+                        <p>Rating: {show.rating.average}</p>
                         {/* <p className="card-text">Premiered on: {show.premiered}</p> */}
                         <a href={`/shows/${show.id}/${show.name}`} className="btn btn-primary">See full show summary.</a>
                     </div>
